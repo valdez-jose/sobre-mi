@@ -1,4 +1,4 @@
-
+/* css/Footer.module.css */
 
 .footer {
   background: #111;
@@ -6,9 +6,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 22px;
+  /* 1. Reducimos el gap de 22px a 14px para juntar los bloques */
+  gap: 14px; 
   color: #fff;
-  padding: 35px 0;
+  /* 2. Reducimos el padding vertical de 35px a 20px */
+  padding: 20px 0; 
   text-align: center;
 }
 
@@ -19,13 +21,13 @@
   align-items: center;
 }
 
-
 .footer-logo p {
   margin: 0;
 }
 
+/* 3. Achicamos un pelín la imagen de la compu si querés optimizar más espacio vertical */
 .footer-logo img {
-  width: 65px;
+  width: 55px; 
 }
 
 /*Links con iconos al lado */
@@ -72,13 +74,13 @@
 .copy {
   font-size: 13px;
   opacity: 0.7;
-  margin-top: 10px;
+  /* 4. Quitamos el margin-top innecesario porque ya tenemos el gap del contenedor */
+  margin: 0; 
 }
 
 
 /* RESPONSIVE MÓVIL*/
 @media (max-width: 600px) {
-
   .footer-nav {
     flex-direction: column;
     gap: 14px;

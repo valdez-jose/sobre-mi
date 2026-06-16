@@ -18,7 +18,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 22px;
-  padding: 20px;
+  padding: 20px 20px 5px 20px;
 }
 
 /* Cada tarjeta */
@@ -83,4 +83,15 @@
   .card-item {
     width: 95%;
   }
+}
+
+.perfil-profesional {
+  max-width: 900px;
+  /* ⬇️ Cambiamos el margen de arriba a 0 (o 5px si quieres un mínimo toque) */
+  margin: 0 auto 30px auto; 
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.7;
 }

@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  background-color: #091313; /* Un gris/verde oscuro ultra moderno */
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor-header {
+  background: rgba(13, 35, 35, 0.75); /* Fondo semitransparente haciendo juego con Datos Personales */
+  backdrop-filter: blur(10px); /* Efecto vidrio esmerilado */
+  -webkit-backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(78, 217, 194, 0.15); /* Sutil línea turquesa abajo */
+}
+
+.marca {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-nombre {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  background: linear-gradient(45deg, #fff, #4ed9c2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitulo-rol {
+  font-size: 0.85rem;
+  color: #cfd8dc;
+  font-weight: 400;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #4ed9c2;
+  padding: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Nav Escritorio */
+.nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li a {
+  color: #cfd8dc;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav ul li a:hover {
+  color: #4ed9c2; /* Cambiado de amarillo a tu turquesa de marca */
+}
+
+/* Hamburguesa oculta en escritorio */
+.hamburger {
+  display: none;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 2000;
+  }
+
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background: #4ed9c2;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Animación a X */
+  .hamburger.active .top {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .middle {
+    opacity: 0;
+  }
+  .hamburger.active .bottom {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: rgba(13, 35, 35, 0.95);
+    backdrop-filter: blur(10px);
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .nav.open {
+    height: 220px;
+    border-bottom: 1px solid rgba(78, 217, 194, 0.2);
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1.2rem;
+  }
+}

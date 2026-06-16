@@ -1,40 +1,67 @@
-
-import React from 'react'
-import '../css/Servicios.css'
+import React from "react";
+// 1. Importamos asignando la variable styles
+import styles from "../css/Servicios.module.css";
 
 const Servicios = () => {
   return (
-    <>
-    <section className="contenedor__cards">
-        
-            <h2>Mi Servicios</h2>
+    // 2. Usamos la notación de corchetes para clases con guiones o guiones bajos
+    <section className={styles['contenedor__cards']}>
+      <h2>Mis Servicios</h2>
 
-        <div className="contenido-cards">
-        
-            <article className="card-item">
-            <img src="https://www.arpynet.com/wp-content/uploads/2018/07/desarrollo-web-ciencia-activa.png" alt="Proyecto 1" />
-            <h4>Desarrollo de paginas web</h4>
-            <p>Creacion de paginas webs, totalmente responsive y mobile first. Lorem ipsum dolor sit amet, 
-              consectetur adipiscing elit.</p>
-            </article>
+      <div className={styles['contenido-cards']}>
 
-            <article className="card-item">
-            <img src="https://www.thatzblog.com/wp-content/uploads/2019/03/Diseno-web.jpg" alt="Proyecto 2" />
-            <h4>Animaciones para webs</h4>
-            <p>Animaciones personalizadas con CSS , JS y Frameworks. Lorem ipsum dolor sit amet, 
-              consectetur adipiscing elit. Aenean lobortis posuere tristique.</p>
-            </article>
+        <article className={styles['card-item']}>
+          <img
+            src="https://abbtech.az/storage/uploads/files/1687508692_1615533694-frontendd.svg"
+            srcSet="https://abbtech.az/storage/uploads/files/1687508692_1615533694-frontendd.svg"
+            alt="Frontend"
+          />
+          <h4>Desarrollo Frontend</h4>
+          <p>
+            Creación de interfaces web modernas utilizando React,
+            JavaScript y TypeScript, adaptadas a dispositivos móviles
+            y de escritorio.
+          </p>
+        </article>
 
-            <article className="card-item">
-            <img src="https://cheso.com.py/img/celulares.png" alt="Proyecto 3" />
-            <h4>Desarrollo de apps</h4>
-            <p>Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-               Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.</p>
-            </article>
-        </div>
+        <article className={styles['card-item']}>
+          <img
+            src="https://img-c.udemycdn.com/course/750x422/6743757_f56a_2.jpg"
+            srcSet="https://img-c.udemycdn.com/course/750x422/6743757_f56a_2.jpg"
+            alt="Backend"
+          />
+          <h4>Desarrollo Backend</h4>
+          <p>
+            Desarrollo de APIs REST con FastAPI, manejo de rutas,
+            validación de datos e integración con aplicaciones web.
+          </p>
+        </article>
+
+        <article className={styles['card-item']}>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2lrFluAFc9zc_Tv5KoeOBvO-G-GAMOyaF84KHZHgH1DvQHu1NKFaiyXA&s=10"
+            srcSet="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2lrFluAFc9zc_Tv5KoeOBvO-G-GAMOyaF84KHZHgH1DvQHu1NKFaiyXA&s=10"
+            alt="Bases de datos"
+          />
+          <h4>Bases de Datos y Despliegue</h4>
+          <p>
+            Integración con PostgreSQL y despliegue de aplicaciones
+            web utilizando plataformas como Vercel y Render.
+          </p>
+        </article>
+
+      </div>
+
+      <div className={styles['perfil-profesional']}>
+        <p>
+          Me interesa colaborar con desarrolladores en proyectos de
+          software, aportar soluciones, adquirir experiencia práctica
+          y seguir creciendo profesionalmente en el desarrollo web
+          Full Stack.
+        </p>
+      </div>
     </section>
-    </>
-  )
-}
+  );
+};
 
-export default Servicios
+export default Servicios;

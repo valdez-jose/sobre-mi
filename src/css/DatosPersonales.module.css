@@ -1,0 +1,109 @@
+
+.seccion-container {
+  max-width: 850px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background-color: #0d2323;
+  border: 1px solid rgba(78, 217, 194, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+
+.contenedor-perfil h2 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.perfil-profesional {
+  text-align: center;
+  color: #cfd8dc;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.separador {
+  border: none;
+  border-top: 1px solid rgba(78, 217, 194, 0.15);
+  margin: 2rem 0;
+}
+
+/* El truco del Grid: Lado a lado en pantallas grandes */
+.grid-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.tarjeta-info {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.tarjeta-info:hover {
+  transform: translateY(-3px);
+  border-color: rgba(78, 217, 194, 0.25);
+}
+
+.tarjeta-info h3 {
+  color: #4ed9c2;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tarjeta-info p {
+  margin: 0.6rem 0;
+  color: #e2e8e8;
+  font-size: 0.95rem;
+}
+
+.tarjeta-info strong {
+  color: #4ed9c2;
+  font-weight: 600;
+}
+
+/* ======================================================= */
+/* ¡AQUÍ SE COLOCA! Estilos para el enlace de GitHub      */
+/* ======================================================= */
+.info-contacto a {
+  color: #ffffff;   
+  text-decoration: none;     
+  font-weight: 600;          
+  transition: color 0.3s ease;
+}
+
+.info-contacto a:hover {
+  color: #4ed9c2;            
+  text-decoration: underline;/* Subrayado solo en hover */
+}
+
+/* ======================================================= */
+
+/* Responsive */
+@media (max-width: 768px) {
+  .seccion-container {
+    margin: 1.5rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .grid-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contenedor-perfil h2 {
+    font-size: 1.6rem;
+  }
+}

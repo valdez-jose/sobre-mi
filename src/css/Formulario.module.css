@@ -1,0 +1,105 @@
+.container {
+  background: #000;
+  padding: 40px; /* Espaciado uniforme y elegante */
+  border-radius: 16px;
+  width: 90%; /* Para que sea más flexible */
+  max-width: 550px; /* Un ancho más estilizado y controlado */
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Le da peso visual */
+
+  /* Cambiamos a columna para que el título quede ARRIBA y no al costado */
+  display: flex;
+  flex-direction: column;
+  gap: 25px; 
+}
+
+.title-box {
+  text-align: center; /* Título perfectamente centrado arriba */
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Separación uniforme entre filas */
+}
+
+.inputs-row {
+  display: flex;
+  gap: 15px; /* Espacio ideal entre Nombre y Correo */
+}
+
+/* Forzamos a que los inputs y el textarea ocupen el 100% de su espacio asignado */
+input,
+textarea {
+  width: 100%; 
+  box-sizing: border-box; /* Evita que el padding deforme el tamaño real */
+  padding: 14px 18px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Un borde sutil para que se note el tamaño */
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: aqua; /* Brilla al hacer click */
+}
+
+input {
+  flex: 1; /* Nombre y Correo se reparten el 50% del ancho cada uno equitativamente */
+}
+
+textarea {
+  min-height: 140px; /* Un tamaño intermedio perfecto, ni gigante ni enano */
+  resize: vertical;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center; /* ¡Botón centrado! Ya no se cae a la izquierda */
+  margin-top: 5px;
+}
+
+button {
+  padding: 14px 35px; /* Botón más imponente y fácil de presionar */
+  border-radius: 8px;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #405153;
+  transform: translateY(-1px); /* Efecto sutil al pasar el mouse */
+}
+
+/* 📌 Responsivo (Para celulares) */
+@media (max-width: 480px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  .inputs-row {
+    flex-direction: column; /* En celulares, Correo baja abajo de Nombre */
+    gap: 20px;
+  }
+}

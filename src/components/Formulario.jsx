@@ -1,24 +1,25 @@
-
 import React from 'react'
-import '../css/Formulario.css'
+// 1. Importamos asignando la variable styles
+import styles from '../css/Formulario.module.css'
 
 const Formulario = () => {
   return (
     <>
-      <div className='container'>
-       <div className="title-box">
+      {/* 2. Cambiamos las clases de texto por las propiedades del objeto styles */}
+      <div className={styles.container}>
+        <div className={styles['title-box']}>
           <h2>Escríbeme</h2>
         </div>
 
         <form>
-          <div className='inputs-row'>
-            <input type="text" placeholder="Nombre" required></input>
-            <input type="email" placeholder="Correo" required></input>
+          <div className={styles['inputs-row']}>
+            <input type="text" placeholder="Nombre" required />
+            <input type="email" placeholder="Correo" required />
           </div>
           <textarea placeholder="Mensaje..." required></textarea>
           
-          <div className='btn-container'>
-             <button type="submit">📩 Enviar</button>
+          <div className={styles['btn-container']}>
+             <button type="submit">Enviar</button>
           </div>
         </form>
     </div>

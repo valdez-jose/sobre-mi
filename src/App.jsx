@@ -1,24 +1,24 @@
 
 import './App.css'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import Header from './components/Header'
-import Seccion from './components/Seccion'
+import DatosPersonales from './components/DatosPersonales'
 import Servicios from './components/Servicios'
 import Formulario from './components/Formulario'
+import Footer from './components/Footer'
+
+
 
 
 function App() {
 
   return (
     <>
-     <Navbar />
+    
      <Header />
-     <Seccion />
+      <DatosPersonales />
      <Servicios />
      <Formulario />
      <Footer/>
-     
     </>
   )
 }
