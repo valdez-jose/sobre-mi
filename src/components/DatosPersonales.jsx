@@ -12,7 +12,7 @@ const DatosPersonales = () => {
     educacion: {
       primaria: "Completo",
       secundaria: "Completo",
-      otros: "Capacitación en desarrollo web, cursos de JavaScript, React, Node.js y FastAPI."
+      otros: "Capacitación en Desarrollo Web con Javascript."
     },
   };
 

@@ -5,7 +5,7 @@ import styles from "../css/Servicios.module.css";
 const Servicios = () => {
   return (
     // 2. Usamos la notación de corchetes para clases con guiones o guiones bajos
-    <section className={styles['contenedor__cards']}>
+    <section id="servicios" className={styles['contenedor__cards']}>
       <h2>Mis Servicios</h2>
 
       <div className={styles['contenido-cards']}>

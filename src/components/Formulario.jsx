@@ -1,12 +1,11 @@
 import React from 'react'
-// 1. Importamos asignando la variable styles
 import styles from '../css/Formulario.module.css'
 
 const Formulario = () => {
   return (
     <>
-      {/* 2. Cambiamos las clases de texto por las propiedades del objeto styles */}
-      <div className={styles.container}>
+      {/* Añadimos id="contacto" para conectarlo con el href del Header */}
+      <div id="contacto" className={styles.container}>
         <div className={styles['title-box']}>
           <h2>Escríbeme</h2>
         </div>
@@ -22,7 +21,7 @@ const Formulario = () => {
              <button type="submit">Enviar</button>
           </div>
         </form>
-    </div>
+      </div>
     </>
   )
 }

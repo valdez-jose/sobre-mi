@@ -26,10 +26,9 @@ const Header = () => {
       {/* 3. Navegación dinámica */}
       <nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre-mi">Sobre Mí</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="https://nuevo-portafolio-angular.vercel.app/" target="_blank" rel="noopener noreferrer">Portafolio</a></li>
+          <li><a href="#servicios" onClick={() => setIsOpen(false)}>Servicios</a></li> 
+          <li><a href="#contacto" onClick={() => setIsOpen(false)}>Contacto</a></li>
         </ul>
       </nav>
 
