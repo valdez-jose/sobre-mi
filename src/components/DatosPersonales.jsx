@@ -5,10 +5,11 @@ import styles from "../css/DatosPersonales.module.css";
 const DatosPersonales = () => {
   const datos = {
     perfil: "Desarrollador Web Full Stack con JavaScript, especializado en la creación de interfaces interactivas, eficientes y modulares.",
-    telefono: "2664685772",
+    telefono: "2665257500",
     correo: "jusepetony7@gmail.com",
     Github:"https://github.com/valdez-jose",
-    residencia: "San Luis, Argentina",
+    portafolio: "https://nuevo-portafolio-angular.vercel.app/",
+    residencia: "San Luis - Capital (Argentina)",
     educacion: {
       primaria: "Completo",
       secundaria: "Completo",
@@ -34,6 +35,7 @@ const DatosPersonales = () => {
           <p><strong>Teléfono:</strong> {datos.telefono}</p>
           <p><strong>Correo:</strong> {datos.correo}</p>
           <p><strong>GitHub:</strong> <a href={datos.Github} target="_blank" rel="noopener noreferrer">Ver perfil</a></p>
+          <p><strong>Portafolio:</strong> <a href={datos.portafolio} target="_blank" rel="noopener noreferrer">Ver portafolio</a></p>
           <p><strong>Residencia:</strong> {datos.residencia}</p>
         </div>
 
