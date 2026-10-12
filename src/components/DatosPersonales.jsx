@@ -7,13 +7,14 @@ const DatosPersonales = () => {
     perfil: "Desarrollador Web Full Stack con JavaScript, especializado en la creación de interfaces interactivas, eficientes y modulares.",
     telefono: "2665257500",
     correo: "jusepetony7@gmail.com",
-    Github:"https://github.com/valdez-jose",
+    Github: "https://github.com/valdez-jose",
     portafolio: "https://nuevo-portafolio-angular.vercel.app/",
     residencia: "San Luis - Capital (Argentina)",
     educacion: {
       primaria: "Completo",
       secundaria: "Completo",
-      otros: "Capacitación en Desarrollo Web con Javascript."
+      // Modificamos únicamente 'otros' manteniendo el dato formal y agregando el desglose
+      otros: "Desarrollador FullStack con JS"
     },
   };
 
@@ -43,7 +44,13 @@ const DatosPersonales = () => {
           <h3>Preparación Académica</h3>
           <p><strong>Primaria:</strong> {datos.educacion.primaria}</p>
           <p><strong>Secundaria:</strong> {datos.educacion.secundaria}</p>
+          
+          {/* Sección 'otros' modificada con los subtags debajo */}
           <p><strong>Otros:</strong> {datos.educacion.otros}</p>
+          <div className={styles['sub-stack']} style={{ paddingLeft: '1rem', marginTop: '0.25rem' }}>
+            <p style={{ margin: '0.1rem 0' }}>• backend</p>
+            <p style={{ margin: '0.1rem 0' }}>• frontend</p>
+          </div>
         </div>
       </div>
     </section>
