@@ -5,7 +5,7 @@ import styles from "../css/DatosPersonales.module.css";
 const DatosPersonales = () => {
   const datos = {
     perfil: "Desarrollador Web Full Stack con JavaScript, especializado en la creación de interfaces interactivas, eficientes y modulares.",
-    telefono: "2665257500",
+    telefono: "2665257500 (mensaje whatsapp)",
     correo: "jusepetony7@gmail.com",
     Github: "https://github.com/valdez-jose",
     portafolio: "https://nuevo-portafolio-angular.vercel.app/",
