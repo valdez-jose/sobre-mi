@@ -59,6 +59,7 @@ const Servicios = () => {
           y seguir creciendo profesionalmente en el desarrollo web
           Full Stack.
         </p>
+        <p>(No tengo problema para colaborar con los hermanos católicos para algún proyectos)</p>
       </div>
     </section>
   );
